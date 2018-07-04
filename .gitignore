@@ -1,0 +1,18 @@
+.netrwhist
+undodir
+vim/bundle/**
+vim/Vundle.vim
+vim/vim
+composer
+vim/flavors
+/vim/.nvim
+composer/composer.lock
+/*.log
+.vagrant
+*.swp
+
+# tar files
+/bin/composer.phar
+/bin/phpctags.phar
+/vim/plugged
+.gitattributes

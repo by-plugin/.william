@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [ ! -f ~/.william/install ]; then
+  echo "Cloning repo..."
+  git clone https://github.com/william-coding/.william ~/.william
+fi
+
+source ~/.william/installer/config.sh
+
+if (( $# == 1 )); then
+  dotfile_install $1
+  exit $?
+fi
+
+dotfile_install all
